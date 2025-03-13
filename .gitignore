@@ -8,3 +8,12 @@
 [Pp]ackages/
 UserSettings/
 .vscode/
+
+# 유니티 자동 생성 파일 무시
+/MemoryCaptures/
+
+# 메타 파일 무시 (이전 설정에서 빠졌던 부분)
+*.meta
+
+# 유니티 라이선스 파일 무시
+[Uu]serSettings/
