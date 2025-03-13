@@ -1,0 +1,117 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Project\\Roguelikegame\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A03E15B8-76B8-8F9D-A149-755BC0DE6AB1}|Assembly-CSharp.csproj|D:\\Project\\Roguelikegame\\assets\\scripts\\system\\turnmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A03E15B8-76B8-8F9D-A149-755BC0DE6AB1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\system\\turnmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A03E15B8-76B8-8F9D-A149-755BC0DE6AB1}|Assembly-CSharp.csproj|d:\\project\\roguelikegame\\assets\\scripts\\enemy\\enemyai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A03E15B8-76B8-8F9D-A149-755BC0DE6AB1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\enemyai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A03E15B8-76B8-8F9D-A149-755BC0DE6AB1}|Assembly-CSharp.csproj|D:\\Project\\Roguelikegame\\assets\\scripts\\player\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A03E15B8-76B8-8F9D-A149-755BC0DE6AB1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A03E15B8-76B8-8F9D-A149-755BC0DE6AB1}|Assembly-CSharp.csproj|D:\\Project\\Roguelikegame\\assets\\scripts\\system\\gridmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A03E15B8-76B8-8F9D-A149-755BC0DE6AB1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\system\\gridmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Project\\Roguelikegame\\Assets\\Scripts\\System\\PlayerMovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\System\\PlayerMovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Project\\Roguelikegame\\Assets\\Scripts\\System\\CombatSystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\System\\CombatSystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PlayerMovement.cs",
+              "DocumentMoniker": "D:\\Project\\Roguelikegame\\Assets\\Scripts\\Player\\PlayerMovement.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerMovement.cs",
+              "ToolTip": "D:\\Project\\Roguelikegame\\Assets\\Scripts\\Player\\PlayerMovement.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerMovement.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAgwCsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-13T09:16:13.497Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CombatSystem.cs",
+              "DocumentMoniker": "D:\\Project\\Roguelikegame\\Assets\\Scripts\\System\\CombatSystem.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\System\\CombatSystem.cs",
+              "ToolTip": "D:\\Project\\Roguelikegame\\Assets\\Scripts\\System\\CombatSystem.cs",
+              "RelativeToolTip": "Assets\\Scripts\\System\\CombatSystem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-13T08:58:37.74Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EnemyAI.cs",
+              "DocumentMoniker": "D:\\Project\\Roguelikegame\\Assets\\Scripts\\Enemy\\EnemyAI.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\EnemyAI.cs",
+              "ToolTip": "D:\\Project\\Roguelikegame\\Assets\\Scripts\\Enemy\\EnemyAI.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemy\\EnemyAI.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAgwC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-13T08:57:45.906Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TurnManager.cs",
+              "DocumentMoniker": "D:\\Project\\Roguelikegame\\Assets\\Scripts\\System\\TurnManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\System\\TurnManager.cs",
+              "ToolTip": "D:\\Project\\Roguelikegame\\Assets\\Scripts\\System\\TurnManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\System\\TurnManager.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAA3wCYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-13T08:57:19.06Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PlayerMovement.cs",
+              "DocumentMoniker": "D:\\Project\\Roguelikegame\\Assets\\Scripts\\System\\PlayerMovement.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\System\\PlayerMovement.cs",
+              "ToolTip": "D:\\Project\\Roguelikegame\\Assets\\Scripts\\System\\PlayerMovement.cs",
+              "RelativeToolTip": "Assets\\Scripts\\System\\PlayerMovement.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-13T08:56:53.645Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GridManager.cs",
+              "DocumentMoniker": "D:\\Project\\Roguelikegame\\Assets\\Scripts\\System\\GridManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\System\\GridManager.cs",
+              "ToolTip": "D:\\Project\\Roguelikegame\\Assets\\Scripts\\System\\GridManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\System\\GridManager.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAgwFcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-13T08:56:16.579Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
