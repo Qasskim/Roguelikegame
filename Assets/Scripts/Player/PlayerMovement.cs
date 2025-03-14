@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Start()
     {
+        // 현재 위치를 그리드 좌표로 변환
         gridPosition = Vector2Int.RoundToInt(transform.position);
         transform.position = (Vector2)gridPosition;
     }
@@ -27,16 +28,21 @@ public class PlayerMovement : MonoBehaviour
 
         if (moveDirection != Vector2Int.zero)
         {
-            TryMove(gridPosition + moveDirection);
+            TryMove(moveDirection);
         }
     }
 
-    void TryMove(Vector2Int targetPosition)
+    void TryMove(Vector2Int direction)
     {
-        if (GridManager.Instance.IsWalkable(targetPosition))
+        Vector2Int newPosition = gridPosition + direction;
+
+        // 벽이 없는 경우에만 이동 가능
+        if (GridManager.Instance.IsWalkable(newPosition))
         {
-            gridPosition = targetPosition;
+            gridPosition = newPosition;
             transform.position = (Vector2)gridPosition;
+
+            // 턴 진행
             TurnManager.Instance.ProcessTurn(turnCost);
         }
     }

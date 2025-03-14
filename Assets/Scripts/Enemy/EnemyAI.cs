@@ -1,47 +1,66 @@
 ﻿using UnityEngine;
-using System.Collections;
 
 public class EnemyAI : MonoBehaviour
 {
-    private Transform player;
     private Vector2Int gridPosition;
+    private Transform player; // 🎯 플레이어를 추적하기 위한 변수
 
     void Start()
     {
-        Invoke("FindPlayer", 1f);
+        gridPosition = Vector2Int.RoundToInt(transform.position);
+
+        // ✅ 적을 `TurnManager`에 등록 (적 턴 실행을 위해 필요)
+        TurnManager.Instance.RegisterEnemy(this);
     }
 
-    void FindPlayer()
+    void Update()
     {
-        player = GameObject.FindGameObjectWithTag("Player")?.transform;
-
+        // ✅ 플레이어가 존재하지 않으면 지속적으로 찾기
         if (player == null)
         {
-            Debug.LogError("EnemyAI: Player를 찾을 수 없습니다!");
-            return;
+            GameObject playerObj = GameObject.FindWithTag("Player");
+            if (playerObj != null)
+            {
+                player = playerObj.transform;
+                Debug.Log("✅ 플레이어를 감지함: " + player.position);
+            }
         }
-
-        gridPosition = Vector2Int.RoundToInt(transform.position);
-        transform.position = (Vector2)gridPosition;
-        TurnManager.Instance.RegisterEnemy(this);
     }
 
     public void PerformMove()
     {
-        if (player != null)
+        if (player == null) return; // 플레이어가 없으면 이동 안 함
+
+        Vector2Int playerPosition = Vector2Int.RoundToInt(player.position);
+        Vector2Int direction = GetBestMoveDirection(playerPosition);
+
+        Debug.Log($"👹 [EnemyAI] {gameObject.name} 이동 방향: {direction}");
+
+        if (direction == Vector2Int.zero)
         {
-            Vector2Int playerGridPos = Vector2Int.RoundToInt(player.position);
-            Vector2Int direction = playerGridPos - gridPosition;
-
-            direction = new Vector2Int(Mathf.Clamp(direction.x, -1, 1), Mathf.Clamp(direction.y, -1, 1));
-
-            Vector2Int targetPosition = gridPosition + direction;
-
-            if (GridManager.Instance.IsWalkable(targetPosition))
-            {
-                gridPosition = targetPosition;
-                transform.position = (Vector2)gridPosition;
-            }
+            Debug.LogWarning($"⚠️ [EnemyAI] {gameObject.name} 이동 방향 없음!");
+            return;
         }
+
+        Vector2Int newPosition = gridPosition + direction;
+
+        if (GridManager.Instance.IsWalkable(newPosition))
+        {
+            gridPosition = newPosition;
+            transform.position = (Vector2)gridPosition;
+            Debug.Log($"👹 [EnemyAI] {gameObject.name} 이동 완료: {gridPosition}");
+        }
+        else
+        {
+            Debug.LogWarning($"⚠️ [EnemyAI] {gameObject.name} 이동 불가능 위치: {newPosition}");
+        }
+    }
+
+    private Vector2Int GetBestMoveDirection(Vector2Int targetPosition)
+    {
+        int dx = targetPosition.x - gridPosition.x;
+        int dy = targetPosition.y - gridPosition.y;
+
+        return new Vector2Int(Mathf.Clamp(dx, -1, 1), Mathf.Clamp(dy, -1, 1));
     }
 }

@@ -20,9 +20,12 @@ public class TurnManager : MonoBehaviour
 
     public void ProcessTurn(float playerTurnCost)
     {
+        Debug.Log($"🔄 [TurnManager] 플레이어 턴 진행: {playerTurnCost}");
+
         currentTurnProgress += playerTurnCost;
         if (currentTurnProgress >= baseTurnCost)
         {
+            Debug.Log("🔄 [TurnManager] 적 턴 실행");
             currentTurnProgress = 0f;
             ExecuteEnemyTurn();
         }
@@ -32,7 +35,15 @@ public class TurnManager : MonoBehaviour
     {
         foreach (EnemyAI enemy in enemies)
         {
-            if (enemy != null) enemy.PerformMove();
+            if (enemy != null)
+            {
+                Debug.Log($"👹 [TurnManager] 적 이동 실행: {enemy.gameObject.name}");
+                enemy.PerformMove();
+            }
+            else
+            {
+                Debug.LogWarning("⚠️ [TurnManager] Null 적 객체가 감지됨");
+            }
         }
     }
 }

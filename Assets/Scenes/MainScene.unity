@@ -178,6 +178,7 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
+  - component: {fileID: 519420033}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -203,7 +204,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.9433962, g: 0.9433962, b: 0.9433962, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -228,7 +229,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 6.7928314
+  orthographic size: 3.7772713
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -259,6 +260,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &519420033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3361d0df51ecfee4a9a0127cf87ecc2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  smoothSpeed: 5
 --- !u!1 &1132968292
 GameObject:
   m_ObjectHideFlags: 0
@@ -288,11 +303,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc4ba5b492afcc243835f14400dce814, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  width: 10
-  height: 10
+  width: 100
+  height: 100
   playerPrefab: {fileID: 4756595082743072170, guid: 4acf093f7e4cc7141a7924641acb0c57, type: 3}
   enemyPrefab: {fileID: 4841687165371036220, guid: 1768d1c1b098cbc49bc1fac7951c61fc, type: 3}
-  enemyCount: 1
+  enemyCount: 3
 --- !u!4 &1132968294
 Transform:
   m_ObjectHideFlags: 0
